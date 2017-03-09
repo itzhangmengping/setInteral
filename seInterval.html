@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>倒计时的小插件</title>
+  </head>
+  <body>
+
+
+    CountDown.openTimeCountBySeconds()
+    根据要计时的秒数打开一个显示剩余时间的倒计时
+
+    参数：
+
+    Ele: 放置倒计时的元素
+
+    CountDownSeconds: 要计时的秒数
+
+    Sign: 用于给倒计时设置标记 （可以给多个倒计时设置同一个标记）
+
+    Divider: 分割时分秒的分割符
+
+    EndFunc: 倒计时结束时执行的方法
+
+    ps:以上均为可选参数
+
+    示例
+
+           CountDown.openTimeCountBySeconds({
+               Ele: document.getElementById('h1'),
+               CountDownSeconds: 3600,
+               Sign: 'flypie',
+               Divider: ':',
+               EndFunc: function () {
+                   console.log('end');
+               }
+           });
+
+
+  </body>
+</html>
