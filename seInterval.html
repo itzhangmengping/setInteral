@@ -7,7 +7,7 @@
   <body>
 
 
-    CountDown.openTimeCountBySeconds()
+    <!-- CountDown.openTimeCountBySeconds()
     根据要计时的秒数打开一个显示剩余时间的倒计时
 
     参数：
@@ -35,7 +35,23 @@
                    console.log('end');
                }
            });
+ -->
+    <div class="countdown" id="countdown" style="width:100px;height:100px;border:1px solid red;">
 
-
+    </div>
   </body>
+  <script  src="setinterval.js">
+
+  </script>
+  <script type="text/javascript">
+        CountDown.openTimeCountBySeconds({
+            Ele: document.getElementById('countdown'),
+            CountDownSeconds: 10,
+            Sign: 'countdown',
+            Divider: ':',
+            EndFunc: function () {
+                console.log('end');
+            }
+        });
+  </script>
 </html>
